@@ -6,6 +6,9 @@
   <meta name="description" content="Proyecto académico de minería de datos aplicado a Fortnite Players Stats: engagement, rendimiento, segmentación y despliegue en Power BI." />
   <title>Fortnite Analytics | Proyecto de Minería de Datos</title>
   <link rel="preconnect" href="https://cdn2.unrealengine.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Chakra+Petch:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -18,7 +21,10 @@
         <a href="#resultados">Resultados</a>
         <a href="#dashboard">Dashboard</a>
         <a href="#descarga">Descarga</a>
-        <a href="#tema">Modo oscuro</a>
+      </div>
+      <div class="theme-box nav-theme-box">
+        <span id="themeLabel">Modo claro activo</span>
+        <button class="btn primary" id="themeToggle" type="button">Cambiar a oscuro</button>
       </div>
     </nav>
 
@@ -31,7 +37,7 @@
           y segmentar perfiles para apoyar campañas de retención, torneos y decisiones estratégicas.
         </p>
         <div class="hero-actions">
-          <a class="btn primary" href="assets/downloads/Fortnite.zip" download>Descargar ZIP del trabajo</a>
+          <a class="btn primary" href="https://github.com/user-attachments/files/29666576/fortnite.zip">Descargar ZIP del trabajo</a>
           <a class="btn secondary" href="#resultados">Ver resultados</a>
         </div>
       </div>
@@ -170,20 +176,6 @@
       </div>
     </section>
 
-    <section class="section theme-section" id="tema">
-      <div>
-        <p class="section-kicker">Personalización visual</p>
-        <h2>Cambiar a modo oscuro</h2>
-        <p>
-          La web usa una versión clara en celeste y blanco, y una versión oscura en celeste y negro para presentación.
-        </p>
-      </div>
-      <div class="theme-box">
-        <span id="themeLabel">Modo claro activo</span>
-        <button class="btn primary" id="themeToggle" type="button">Cambiar a oscuro</button>
-      </div>
-    </section>
-
     <section class="section download-section" id="descarga">
       <div class="download-card">
         <div>
@@ -199,7 +191,7 @@
             <li>Fortnite_EV3_Modelo.pbix</li>
           </ul>
         </div>
-        <a class="btn download" href="assets/downloads/Fortnite.zip" download>Descargar Fortnite.zip</a>
+        <a class="btn download" href="https://github.com/user-attachments/files/29666576/fortnite.zip">Descargar Fortnite.zip</a>
       </div>
     </section>
   </main>
