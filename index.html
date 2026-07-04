@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Proyecto académico de minería de datos aplicado a Fortnite Players Stats: engagement, rendimiento, segmentación y despliegue en Power BI." />
+  <title>Fortnite Analytics | Proyecto de Minería de Datos</title>
+  <link rel="preconnect" href="https://cdn2.unrealengine.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">Fortnite Analytics</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menú</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#problema">Problema</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#descarga">Descarga</a>
+        <a href="#tema">Modo oscuro</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Evaluación 3 · Minería de Datos</p>
+        <h1>Fortnite Players Stats convertido en decisiones de negocio</h1>
+        <p class="hero-text">
+          Proyecto CRISP-DM enfocado en detectar bajo engagement, reconocer jugadores de alto rendimiento
+          y segmentar perfiles para apoyar campañas de retención, torneos y decisiones estratégicas.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="assets/downloads/Fortnite.zip" download>Descargar ZIP del trabajo</a>
+          <a class="btn secondary" href="#resultados">Ver resultados</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Resumen del proyecto">
+        <span class="card-label">Modelo destacado</span>
+        <h2>High Performance</h2>
+        <p>Regresión logística con F1 Test de 0,944 para identificar jugadores competitivos.</p>
+        <div class="mini-metrics">
+          <div><strong>1.435</strong><span>jugadores</span></div>
+          <div><strong>37</strong><span>columnas</span></div>
+          <div><strong>K=2</strong><span>clusters</span></div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section split" id="problema">
+      <div>
+        <p class="section-kicker">Business Understanding</p>
+        <h2>Problema de negocio</h2>
+        <p>
+          Fortnite depende de mantener jugadores activos y comprender cómo se comportan dentro del juego.
+          El problema central es identificar qué jugadores muestran baja actividad, cuáles tienen mejor rendimiento
+          competitivo y qué segmentos existen para tomar acciones diferenciadas.
+        </p>
+        <div class="business-list">
+          <article>
+            <h3>Retención</h3>
+            <p>Detectar jugadores con bajo engagement para proponer misiones, recompensas o campañas de reactivación.</p>
+          </article>
+          <article>
+            <h3>Competitividad</h3>
+            <p>Reconocer jugadores de alto rendimiento para torneos, rankings y desafíos competitivos.</p>
+          </article>
+          <article>
+            <h3>Segmentación</h3>
+            <p>Agrupar jugadores regulares e intensivos para evitar aplicar la misma estrategia a todos.</p>
+          </article>
+        </div>
+      </div>
+      <figure class="image-panel">
+        <img src="https://cdn2.unrealengine.com/fortnite-chapter-3-season-1-flipped-3840x2160-27429dc20c19.jpg" alt="Isla de Fortnite vista desde altura" />
+        <figcaption>El análisis transforma estadísticas de juego en señales útiles para el negocio.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" id="resultados">
+      <p class="section-kicker">Modeling & Evaluation</p>
+      <h2>Resultados principales</h2>
+      <p class="section-lead">
+        Los modelos simples fueron los que mejor generalizaron. Esto facilita explicar los resultados y llevarlos a Power BI.
+      </p>
+
+      <div class="results-grid">
+        <article class="result-card">
+          <span class="tag">Regresión</span>
+          <h3>Engagement</h3>
+          <p class="metric-value">R² Test 0,928</p>
+          <p>La regresión lineal fue el mejor modelo para predecir minutos jugados.</p>
+        </article>
+        <article class="result-card featured">
+          <span class="tag">Clasificación</span>
+          <h3>High Performance</h3>
+          <p class="metric-value">F1 Test 0,944</p>
+          <p>La regresión logística identificó jugadores de alto rendimiento con desempeño alto.</p>
+        </article>
+        <article class="result-card">
+          <span class="tag">Clustering</span>
+          <h3>Segmentos</h3>
+          <p class="metric-value">KMeans K=2</p>
+          <p>Se separaron perfiles regulares e intensivos para acciones más específicas.</p>
+        </article>
+      </div>
+
+      <div class="chart-section">
+        <div class="chart-copy">
+          <h3>Lectura rápida de segmentos</h3>
+          <p>
+            El Cluster 1 concentra mayor proporción de jugadores de alto rendimiento, mientras que el Cluster 0 agrupa a la mayoría de usuarios regulares.
+          </p>
+        </div>
+        <div class="bars" role="img" aria-label="Comparación de clusters del proyecto Fortnite">
+          <div class="bar-row">
+            <span>Cluster 0 · Regulares</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 68%"></div></div>
+            <strong>67,6%</strong>
+          </div>
+          <div class="bar-row">
+            <span>Cluster 1 · Intensivos</span>
+            <div class="bar-track"><div class="bar-fill strong" style="width: 32%"></div></div>
+            <strong>32,4%</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split reversed" id="dashboard">
+      <figure class="image-panel tall">
+        <img src="https://cdn2.unrealengine.com/fortnite-armored-battle-bus-1900x600-3cfa6997b2ce.png" alt="Battle Bus blindado de Fortnite" />
+        <figcaption>El despliegue final conecta los hallazgos con acciones prácticas de negocio.</figcaption>
+      </figure>
+      <div>
+        <p class="section-kicker">Deployment</p>
+        <h2>Propuesta para Power BI</h2>
+        <p>
+          El archivo preparado para Power BI permite visualizar KPIs de jugadores, clusters y targets de negocio.
+          El panel puede apoyar decisiones sobre retención, rendimiento y segmentación.
+        </p>
+        <div class="kpi-grid">
+          <div><span>Total jugadores</span><strong>1.435</strong></div>
+          <div><span>Bajo engagement</span><strong>25%</strong></div>
+          <div><span>Alto rendimiento</span><strong>25%</strong></div>
+          <div><span>Prom. kills/partida</span><strong>1,96</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section actions-section">
+      <p class="section-kicker">Acciones estratégicas</p>
+      <h2>Qué decisiones permite tomar el análisis</h2>
+      <div class="action-cards">
+        <article>
+          <h3>Campañas de reactivación</h3>
+          <p>Enviar desafíos o recompensas a jugadores con bajo engagement para aumentar minutos jugados.</p>
+        </article>
+        <article>
+          <h3>Torneos y rankings</h3>
+          <p>Usar el target High_Performance para identificar jugadores con potencial competitivo.</p>
+        </article>
+        <article>
+          <h3>Progresión por perfil</h3>
+          <p>Diseñar beneficios distintos para jugadores regulares e intensivos según su comportamiento.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section theme-section" id="tema">
+      <div>
+        <p class="section-kicker">Personalización visual</p>
+        <h2>Cambiar a modo oscuro</h2>
+        <p>
+          La web usa una versión clara en celeste y blanco, y una versión oscura en celeste y negro para presentación.
+        </p>
+      </div>
+      <div class="theme-box">
+        <span id="themeLabel">Modo claro activo</span>
+        <button class="btn primary" id="themeToggle" type="button">Cambiar a oscuro</button>
+      </div>
+    </section>
+
+    <section class="section download-section" id="descarga">
+      <div class="download-card">
+        <div>
+          <p class="section-kicker">Entrega final</p>
+          <h2>Descargar ZIP del proyecto</h2>
+          <p>
+            El archivo contiene el informe, la presentación, el notebook de Colab y el modelo de Power BI incluidos en el ZIP original.
+          </p>
+          <ul class="file-list">
+            <li>Informe_Fortnite_CRISPDM.docx</li>
+            <li>Fortnite_CRISPDM.pptx</li>
+            <li>ExamenColab.ipynb</li>
+            <li>Fortnite_EV3_Modelo.pbix</li>
+          </ul>
+        </div>
+        <a class="btn download" href="assets/downloads/Fortnite.zip" download>Descargar Fortnite.zip</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Proyecto académico de Minería de Datos. No afiliado a Epic Games.</p>
+    <p>Imágenes usadas desde fuentes oficiales de Fortnite/Epic Games.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
